@@ -1,15 +1,17 @@
 /**
- * 
+ * tests/test_defaults.cpp
  */
 
+#include "person.hpp"
 #include "gtest/gtest.h"
 
 namespace gtestbox {
     namespace tests {
         namespace test_hello {
-            TEST(HelloTest, BasicAssertions) {
-                EXPECT_STRNE("hello", "world");
-                EXPECT_EQ(7 * 6, 42);
+            TEST(TestDefaults, BasicAssertions) {
+                gtestbox::person::Person p;
+                EXPECT_STREQ(p.name.c_str(), "unknown");
+                EXPECT_EQ(p.age, 0);
             }
         }
     }

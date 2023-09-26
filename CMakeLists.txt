@@ -13,6 +13,7 @@ add_subdirectory(googletest EXCLUDE_FROM_ALL)
 enable_testing()
 
 # add; link; and catalog test_hello tests
-add_executable(test_hello tests/test_hello.cpp)
-target_link_libraries(test_hello gtest gtest_main ${PROJECT_NAME})
-add_test(NAME test_hello COMMAND test_hello)
+add_executable(test_defaults tests/test_defaults.cpp)
+target_include_directories(test_defaults PUBLIC ${CMAKE_SOURCE_DIR})
+target_link_libraries(test_defaults gtest gtest_main ${PROJECT_NAME})
+add_test(NAME test_defaults COMMAND test_defaults)
