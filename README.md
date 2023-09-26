@@ -160,7 +160,7 @@ In the meantime, I think you'll find this approach fairly robust across well-org
 
 * [GitHub Project](https://github.com/Tythos/gtestbox)
 
-* [Dev.to Article](https://dev.to/tythos/basic-c-unit-testing-with-gtest-cmake-and-submodules-47a-temp-slug-4877748)
+* [Dev.to Article](https://dev.to/tythos/basic-c-unit-testing-with-gtest-cmake-and-submodules-4767)
 
 * [GTest CMake Guide](https://google.github.io/googletest/quickstart-cmake.html)
 
